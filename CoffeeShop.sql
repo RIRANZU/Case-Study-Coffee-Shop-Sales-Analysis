@@ -8,7 +8,7 @@ FROM BRIGHT_COFFEE.PUBLIC.COFFEE_SHOP;
 
 --New Table to assit with a detailed dashboard
 SELECT  TO_DATE(transaction_date) as Purchase_date,
-        DAYOFMONTH(TO_DATE(TRANSACTION_DATE)) as Month_Name,
+        DAYOFMONTH(TO_DATE(TRANSACTION_DATE)) as Day,
         MONTHNAME(TO_DATE(TRANSACTION_DATE)) as Name_of_month,
         DAYNAME(TO_DATE(TRANSACTION_DATE)) as Day_Name,
 
