@@ -23,7 +23,7 @@ SELECT  TO_DATE(transaction_date) as Purchase_date,
         ELSE 'Evening'
         END AS Time_Bucket,
         transaction_id,
-        COUNT(TRANSACTION_QTY) As Number_of_Transactions,
+        TRANSACTION_QTY As Number_of_Transactions,
         product_id,
         product_type,
         product_detail,
